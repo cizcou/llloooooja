@@ -75,42 +75,91 @@ export default function App() {
 
       </Animatable.View>
 
-     <Modal animationtype='bounceInUp' transparent={false} visible={door} >
-       <SafeAreaView style={styles.container}>
-        
-           <Text style={styles.title}>Loja do Antonio Neto</Text>
-           <Text style={styles.subtitle}> Bem vindo: {input} </Text>
-         
-         <View style={styles.images}>
-         <TouchableOpacity onPress={one}><Image  source={require('./src/images/prod1.jpg')} style={{height: 150, width: 150, flexDirection: 'row'}} /></TouchableOpacity>
-         <TouchableOpacity onPress={two}><Image  source={require('./src/images/prod2.jpg')} style={{height: 150, width: 150, flexDirection: 'row'}} /></TouchableOpacity>
-         <TouchableOpacity onPress={three}><Image  source={require('./src/images/prod3.jpg')} style={{height: 150, width: 150, flexDirection: 'row'}} /></TouchableOpacity>
-         <TouchableOpacity onPress={four}><Image  source={require('./src/images/prod4.jpg')} style={{height: 150, width: 150, flexDirection: 'row'}} /></TouchableOpacity>
-         <TouchableOpacity onPress={five}><Image  source={require('./src/images/prod5.jpg')} style={{height: 150, width: 150, flexDirection: 'row'}} /></TouchableOpacity>
-         <TouchableOpacity onPress={liu}><Image  source={require('./src/images/prod6.jpg')} style={{height: 150, width: 150, flexDirection: 'row'}} /></TouchableOpacity>
-          </View>
-            
-       </SafeAreaView>
-     </Modal>
+      <Modal animationtype='bounceInUp' transparent={false} visible={door} >
+        <SafeAreaView style={styles.container}>
 
-     <Modal animationtype='bounceInUp' transparent={false} visible={image} style={{backgroundColor: '#000'}}>
-       
-       <TouchableOpacity onPress={ () => setImage(false) }>
-         <Ionicons style={{marginLeft: 5, marginRight: 5}}name="md-arrow-back" size={40} color="#DDD" />
-       </TouchableOpacity>
-       <Image source={link} style={styles.into} />
-       <Text style={{textAlign:'center'}}>{descript}</Text>
-       
-      
-     </Modal>
+            <Text style={styles.title}>
+              Loja do Antonio Neto
+            </Text>
+
+            <Text style={styles.subtitle}> 
+              Bem vindo: {input} 
+            </Text>
+
+          <View style={styles.images}>
+            <TouchableOpacity onPress={one}>
+              <Image  
+                source={require('./src/images/prod1.jpg')} 
+                style={{height: 150, width: 150, flexDirection: 'row'}} 
+              />
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.images}>
+            <TouchableOpacity onPress={two}>
+              <Image 
+                source={require('./src/images/prod2.jpg')} 
+                style={{height: 150, width: 150, flexDirection: 'row'}} 
+              />
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.images}>
+            <TouchableOpacity onPress={three}>
+                <Image  
+                    source={require('./src/images/prod3.jpg')} 
+                    style={{height: 150, width: 150, flexDirection: 'row'}} 
+                />
+            </TouchableOpacity>
+          </View>
+          
+          <View style={styles.images}>
+            <TouchableOpacity onPress={four}>
+              <Image  
+                source={require('./src/images/prod4.jpg')} 
+                style={{height: 150, width: 150, flexDirection: 'row'}} 
+              />
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.images}>
+            <TouchableOpacity onPress={five}>
+              <Image  
+                source={require('./src/images/prod5.jpg')} 
+                style={{height: 150, width: 150, flexDirection: 'row'}} 
+              />
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.images}>
+            <TouchableOpacity onPress={liu}>
+              <Image  
+                source={require('./src/images/prod6.jpg')} 
+                style={{height: 150, width: 150, flexDirection: 'row'}} 
+              />
+            </TouchableOpacity>
+          </View>
+
+        </SafeAreaView>
+      </Modal>
+
+      <Modal animationtype='bounceInUp' transparent={false} visible={image} style={{backgroundColor: '#000'}}>
+
+          <TouchableOpacity onPress={ () => setImage(false) }>
+            <Ionicons style={{marginLeft: 5, marginRight: 5}}name="md-arrow-back" size={40} color="#DDD" />
+          </TouchableOpacity>
+          <Image source={link} style={styles.into} />
+          <Text style={{textAlign:'center'}}>{descript}</Text>  
+        
+      </Modal>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   images:{
-    height: 460,
-    width: 320,
+    height: 150,
+    width: 150,
     backgroundColor: '#FFF',
     justifyContent: 'center',
     marginLeft: 10,
