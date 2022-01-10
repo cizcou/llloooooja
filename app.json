@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Hero Store",
-    "slug": "lojaRN",
+    "slug": "llloooooja",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,7 +21,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
@@ -29,6 +29,6 @@
       "barStyle": "light-content",
       "backgroundColor": "#000"
     },
-    "package":"com.kalizn.lojaRN"
+    "package":"com.cizcou.llloooooja"
   }
 }
